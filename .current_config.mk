@@ -1,0 +1,1 @@
+device/friendlyelec/s5p4418/nanopc_t2.mk

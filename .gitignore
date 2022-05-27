@@ -1,0 +1,5 @@
+*.code-workspace
+friendlywrt
+out/*.img
+out/boot.*
+out/rootfs.*
