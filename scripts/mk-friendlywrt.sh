@@ -20,8 +20,8 @@ echo "FRIENDLYWRT_SRC_PATHNAME = $FRIENDLYWRT_SRC_PATHNAME"
 echo "=========================================="
 
 cd ${TOP_DIR}/${FRIENDLYWRT_SRC_PATHNAME}
-./scripts/feeds update -a
-./scripts/feeds install -a
+#./scripts/feeds update -a
+#./scripts/feeds install -a
 if [ ! -f .config ]; then
     if [ -d ${TOP_DIR}/configs/${TARGET_FRIENDLYWRT_CONFIG} ]; then
         CURRPATH=$PWD
@@ -49,8 +49,8 @@ if [ ! -d dl ]; then
     echo "dl directory doesn't  exist. Will make download full package from openwrt site."
 fi
 make download -j$(nproc)
-find dl -size -1024c -exec ls -l {} \;
-find dl -size -1024c -exec rm -f {} \;
+#find dl -size -1024c -exec ls -l {} \;
+#find dl -size -1024c -exec rm -f {} \;
 
 USING_DATE=$(date +%Y%m%d)
 echo "${USING_DATE}" > ./package/base-files/files/etc/rom-version

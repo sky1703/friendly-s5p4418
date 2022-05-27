@@ -9,8 +9,7 @@ TARGET_OSNAME=friendlywrt
 # 
 
 TARGET_FRIENDLYWRT_CONFIG=config_s5p4418
-#FRIENDLYWRT_SRC=../friendlywrt
-FRIENDLYWRT_SRC=../../coolsnowwolf
+FRIENDLYWRT_SRC=friendlywrt
 FRIENDLYWRT_PACKAGES+=(packages/pkg1)
 FRIENDLYWRT_PACKAGES+=(packages/pkg2)
 FRIENDLYWRT_FILES+=(device/friendlyelec/s5p4418/default-settings)
